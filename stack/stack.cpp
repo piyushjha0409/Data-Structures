@@ -5,14 +5,14 @@ class Stack{
 	private:
 		int top;
 		int arr[5]; //size = 5 so then size-1 = 4
-		
+
 	public:
 	 Stack(){ //constructor
-	 	 top = -1;  //at first the stack is empty
+	 	top = -1;  //at first the stack is empty
 	 	for(int i=0; i<5; i++){
 	 		arr[i] = 0;
 		}
-	 }	
+	 }
 	 bool isEmpty(){
 	 	if(top==-1){
 	 		return true;
@@ -20,7 +20,7 @@ class Stack{
 		 else{
 		 	return false;
 		 }
-	 }	
+	 }
 	 bool isFull(){
 	 	if(top==4){
 	 		return true;
@@ -39,7 +39,7 @@ class Stack{
 	     top++;
 	     //Push the value at that particular position
 	     arr[top] == val;
-		 	
+
 		 }
 	 }
  int pop(){
@@ -61,7 +61,7 @@ class Stack{
  int peek(int pos){
 	   if(isEmpty()){
 	   	cout<<"Stack Underflow!"<<endl;
-	   }	
+	   }
 	   else{
 	   	return arr[pos];
 	   }
@@ -74,15 +74,15 @@ class Stack{
   	for(int i=4; i>=0; i--){
   		cout<<arr[i]<<" ";
 	  }
-  } 
-	 	 
+  }
+
 };
 
 int main(){
 	//switch case approach
 	Stack s1;
 	int position, value, option;
-	
+
 	//Take the user input
 	do{
 		cout<<"Enter the option number to perform specific operations:"<<endl;
@@ -94,14 +94,14 @@ int main(){
 		cout<<"6.Check StackUnderFlow()"<<endl;
 		cout<<"7.Check Stack OverFlow()"<<endl;
 		cout<<"8.Peek()"<<endl;
-		
-	
-	
+
+
+
 	cin>>option;
-	
+
 	//switch case
 	switch(option){
-	 
+
 	 case 0:
 	 	break;
 	 case 1:
@@ -139,8 +139,8 @@ int main(){
 	 default:
 	 	cout<<"Please Enter the correct option number for the operation:"<<endl;
 	}
-	
+
     }while(option != 0);
-	
+
 	return 0;
 }
