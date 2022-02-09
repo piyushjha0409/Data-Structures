@@ -18,11 +18,14 @@ Node* createNode(int data){
 }
 
 //preorder - data->left->right
-void preorder(struct Node* root){
+void printPreorder(struct Node* root){
   if(root!=NULL){
-    cout<<root->data;
-    cout<<root->left;
-    cout<<root->right;
+   //print the data of the root
+   cout<< root->data<<" ";
+   //recur the left child 
+   printPreorder(root->left);
+   //recur the right child
+   printPreorder(root->right);
   }
   return;
 }
@@ -34,6 +37,6 @@ int main(){
     root->left->right = createNode(5);
 
     cout << "\nPreorder traversal of binary tree is \n";
-    preorder(root);
+    printPreorder(root);
   return 0;
 }

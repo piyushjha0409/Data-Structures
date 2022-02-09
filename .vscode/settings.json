@@ -3,6 +3,7 @@
     "files.associations": {
         "SPARSE.C": "cpp",
         "SPARSE (1).C": "cpp",
-        "type_traits": "c"
+        "type_traits": "c",
+        "iostream": "cpp"
     }
 }
