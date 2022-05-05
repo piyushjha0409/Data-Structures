@@ -1,14 +1,29 @@
-import java.util.*;
+/**
+ * practice15
+ */
+//kadanes algorithm 
 public class practice15 {
+public static void main(String[] args){
+     int[] arr = {-4, 2, 7,-9};
+     int ans = SumArray(arr);
+     System.out.println(ans);
 
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int n;
-        
-        int arr[] = new int [];
-    }
+}
+    
+//function for the sumArray
+public static int SumArray(int[] arr)
+{
+  var sum = 0;
+  var max  = arr[0];
 
-    static void removeDuplicates(int arr[]. int size){
+  for (var item : arr) {
+      sum += item;
 
-    }
+      //sum = Math  
+
+      max = Math.max(sum, max);
+      sum = Math.max(sum, 0);
+  }
+  return max;
+}
 }

@@ -21,11 +21,7 @@ public:
     // This is the Destructor : It is used to release the memory
     ~Node()
     {
-        while (/* condition */)
-        {
-            /* code */
-        }
-        
+       
         if (prev != NULL)
         {
             Node *trav = prev;
