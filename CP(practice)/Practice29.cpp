@@ -40,10 +40,11 @@ int search(vector<int> nums, int target)
 {
     int pivot = FindPivot(nums); // isse mujhe pivot ka index mil jaega
     int ans = binarySearch(nums, target, 0, pivot - 1);
+
     if(ans != -1){
         return ans;
     }else{
-        binarySearch(nums, target, pivot, nums.size()-1);
+        ans = binarySearch(nums, target, pivot, nums.size()-1);
     }
     return ans;
 }
