@@ -1,3 +1,7 @@
+#include<bits/stdc++.h>
+#include<string>
+using namespace std;
+
 int value(char c){
     if(c == 'I'){
         return 1;
@@ -23,7 +27,8 @@ int value(char c){
 
     return -1;
 }
-void solve(string &str){
+
+int solve(string str){
   //intializing the result 
   int res = 0;
 
@@ -47,4 +52,18 @@ void solve(string &str){
     }
   }
   return res;
+}
+
+int main()
+{
+ int t;
+ cin>>t;
+ while (t--)
+ {
+    string s;
+    cin>>s;
+    solution ob;
+    cout<<ob.solve(s)<<endl;
+ }
+ return 0;
 }
