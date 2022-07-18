@@ -19,7 +19,7 @@ vector<string> removeAnagrams(vector<string>& words) {
 }
 int main()
 {
- cout<<removeAnagrams()
+ cout<<removeAnagrams({"piyuhs","piyush","pi"})<<endl;
 
  return 0;
 }
