@@ -4,6 +4,7 @@
         "SPARSE.C": "cpp",
         "SPARSE (1).C": "cpp",
         "type_traits": "c",
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "ostream": "cpp"
     }
 }
