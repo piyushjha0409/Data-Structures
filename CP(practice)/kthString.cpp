@@ -22,6 +22,8 @@ using namespace std;
 // };
 
 //Solution: 2
+class Solution {
+public:
 string kthDistinct(vector<string> &arr, int k){
     //making an unordered map
     unordered_map<string , int> mp;
@@ -37,10 +39,12 @@ string kthDistinct(vector<string> &arr, int k){
                 return arr[i];
             }
         }
-    return "";
     }
+    return "";
 }
+};
 int main()
 {
+    //Ddriver code
     return 0;
 }
