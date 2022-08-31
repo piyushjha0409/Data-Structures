@@ -74,6 +74,7 @@ void display(node* head){
 //}
 int main(){
 	node* head = NULL;
+	
 	insertionCircular(head, 1);
 	insertionCircular(head, 2);
 	insertionCircular(head, 3);

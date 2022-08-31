@@ -30,7 +30,7 @@ void insertionAtNode(node* &head, int val){
  //deleting the node
  void deleteAtNode(node * &head){
   node * temp = head; //initializing from the head
-  while(temp->next->next == NULL){  //it has to be at n-1 th position 
+  while(temp->next->next != NULL){  //it has to be at n-1 th position 
       temp = temp->next;
   }
   node * todelete = temp->next;
