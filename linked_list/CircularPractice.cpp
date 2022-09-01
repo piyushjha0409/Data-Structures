@@ -55,7 +55,7 @@ void deletion(Node* &head, int key){
  
  //if position is one
  if(key == 1){
-    deleteAtHead(head);
+    deletionAtHead(head);
     return;
  } 
  Node* temp = head;
@@ -67,7 +67,7 @@ if(count != key - 1){
 }
  Node* toDelete = temp->next;
  temp->next = temp->next->next; 
-
+ delete toDelete;
 }
 
 int main()
@@ -84,7 +84,7 @@ display(head);
 
 cout<<endl;
 //deleting the node 
-  deletion(head, 1);
+deletion(head, 1);
   // cout<<endl;
     
 //displaying the link list
