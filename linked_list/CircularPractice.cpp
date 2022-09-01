@@ -40,11 +40,22 @@ void display(Node* head){
 
 }
 
+//function for deleting the node from the head;
+void deletionAtHead(Node* &head){
+ Node* temp = head;
+ while(temp->next != head){
+  temp = temp->next;
+ }
+ Node* toDelete = head;
+ temp->next = head->next;
+ head = head->next;
+}
 //function for deleting the node
 void deletion(Node* &head, int key){
  
  //if position is one
  if(key == 1){
+    deleteAtHead(head);
     return;
  } 
  Node* temp = head;
@@ -55,11 +66,10 @@ if(count != key - 1){
    count++;
 }
  Node* toDelete = temp->next;
- temp->next = temp->next->next;
+ temp->next = temp->next->next; 
 
- 
-    
 }
+
 int main()
 {
 
@@ -71,6 +81,14 @@ int main()
 
 //printing the circular link list
 display(head);
+
+cout<<endl;
+//deleting the node 
+  deletion(head, 1);
+  // cout<<endl;
     
-    return 0;
+//displaying the link list
+display(head);
+
+ return 0;
 }   
