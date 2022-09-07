@@ -59,7 +59,7 @@ node* reverse_recursive(node* &head){
     node* newhead = reverse_recursive(head->next);
     //just reversing from the end side manually
     head->next->next = head;
-    head->next = NULL;
+    head->next = NULL;  
 
     return newhead;
 }
