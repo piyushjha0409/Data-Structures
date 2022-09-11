@@ -1,10 +1,10 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-   bool checkPalindrome(string s){
+bool checkPalindrome(string s){
      
        for(int i=0; i<s.length()/2; i++){
-           if(s[i] != s[s.length()-1]){
+           if(s[i] != s[s.length()-i-1]){
                return false;
            }
        }
@@ -19,8 +19,9 @@ using namespace std;
            return "";
        }
 }
-};
 int main()
 {
+    string s = "amanaplanacanalpanama";
+    cout<<checkPalindrome(s);
     return 0;
 }
