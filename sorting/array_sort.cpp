@@ -19,6 +19,7 @@ void sortArray(int arr[], int n){
 		}
 	}
 }
+
 int main(){
     
     int arr[] = {12, 54, 65, 7, 23, 9};
