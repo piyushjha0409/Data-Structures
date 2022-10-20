@@ -28,7 +28,15 @@ int main()
 
 //A function pointer points to code not the data.
 //Unlike other pointers we do not allocate or deallocate the memory using the function pointers.
-  void (*fun)(int) = function;
-  fun(10);
+  // void (*fun)(int) = function;
+  // fun(10);
+
+int x = 5;
+if(x++ == 5){
+  cout<<++x<<endl;
+}
+else {
+ cout<<"else printed"<<endl;
+}
   return 0;
 }
